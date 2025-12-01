@@ -30,6 +30,31 @@ body{
   line-height:1.45;
 }
 
+/* ----------------------------------------------
+   NEW: Neon AI + Human Handshake Background
+---------------------------------------------- */
+.handshake-bg {
+  position: fixed;
+  inset: 0;
+  background: url("images/handshake.png") center/480px no-repeat;
+  opacity: 0.11;
+  filter: drop-shadow(0 0 25px #6a4cff) drop-shadow(0 0 35px #3ab0ff);
+  animation: floatGlow 8s ease-in-out infinite alternate;
+  z-index: -3;
+  pointer-events: none;
+}
+
+@keyframes floatGlow {
+  0% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 25px #6a4cff) drop-shadow(0 0 35px #3ab0ff);
+  }
+  100% {
+    transform: translateY(18px) scale(1.03);
+    filter: drop-shadow(0 0 40px #7b45ff) drop-shadow(0 0 55px #3ac1ff);
+  }
+}
+
 /* background svg full-screen */
 .bg-svg{
   position:fixed;
@@ -278,31 +303,3 @@ body{
   .lower-inner{ grid-template-columns: 1fr; }
   .site-header{ padding:12px 0; }
 }
-/* ----------------------------------------------
-   NEW: Neon AI + Human Handshake Background
----------------------------------------------- */
-.handshake-bg {
-  position: fixed;
-  inset: 0;
-  background: url("images/handshake.png") center/480px no-repeat;
-  opacity: 0.11;
-  filter: drop-shadow(0 0 25px #6a4cff) drop-shadow(0 0 35px #3ab0ff);
-  animation: floatGlow 8s ease-in-out infinite alternate;
-  z-index: -3;
-  pointer-events: none;
-}
-
-/* Smooth floating + glow shift */
-@keyframes floatGlow {
-  0% {
-    transform: translateY(0) scale(1);
-    filter: drop-shadow(0 0 25px #6a4cff) drop-shadow(0 0 35px #3ab0ff);
-  }
-  100% {
-    transform: translateY(18px) scale(1.03);
-    filter: drop-shadow(0 0 40px #7b45ff) drop-shadow(0 0 55px #3ac1ff);
-  }
-}
-
-/* Rest of your full CSS (100% unchanged below this line) */
-
