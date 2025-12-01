@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Isa Khan — Ethical Hacker | Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Isa Khan — Ethical Hacker portfolio (neon purple/blue theme)." />
+</head>
+<body>
+  <main class="page">
+    <!-- decorative background SVG (neon lines + blobs) -->
+    <svg class="bg-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <!-- big gradient blobs -->
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0" stop-color="#7b45ff"/>
+          <stop offset="1" stop-color="#3ab0ff"/>
+        </linearGradient>
+        <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="70" />
+        </filter>
+        <linearGradient id="bgGrad" x1="0" x2="1">
+          <stop offset="0" stop-color="#0b1020"/>
+          <stop offset="1" stop-color="#081124"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="100%" height="100%" fill="url(#bgGrad)" />
+      <!-- left purple blob -->
+      <ellipse cx="220" cy="220" rx="300" ry="180" fill="#5b2de6" opacity="0.12" filter="url(#blur1)"/>
+      <!-- right cyan blob -->
+      <ellipse cx="1180" cy="140" rx="260" ry="160" fill="#2bb8ff" opacity="0.10" filter="url(#blur1)"/>
+      <!-- subtle center purple blob -->
+      <ellipse cx="800" cy="520" rx="420" ry="220" fill="#6b4cff" opacity="0.06" filter="url(#blur1)"/>
+
+      <!-- neon curved lines -->
+      <path d="M -50 600 C 200 420, 450 760, 900 620" stroke="#ffffff" stroke-opacity="0.06" stroke-width="2" fill="none"/>
+      <path d="M 400 50 C 700 150, 1000 -40, 1400 80" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1.5" fill="none"/>
+      <path d="M -20 300 C 120 160, 400 240, 620 200" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1.2" fill="none"/>
+    </svg>
+
+    <header class="site-header container">
+      <div class="left">
+        <div class="logo">ISA KHAN</div>
+      </div>
+      <div class="right">
+        <div class="small-role">Ethical Hacker — Web Dev & Pentester</div>
+      </div>
+    </header>
+
+    <!-- About hero section -->
+    <section class="hero container">
+      <div class="hero-inner">
+        <!-- left card content -->
+        <div class="hero-left glass">
+          <div class="pill">
+            <span>About me</span>
+          </div>
+
+          <h1 class="hero-name">Isa Khan</h1>
+          <p class="hero-title">Ethical Hacker & Web Developer</p>
+
+          <p class="bio">
+            I challenge myself to master IT, web development, and ethical hacking through hands-on projects,
+            pentesting labs, and continuous learning. I build secure web apps, hunt vulnerabilities responsibly,
+            and deliver practical solutions.
+          </p>
+
+          <div class="contact-list">
+            <a class="contact-item" href="mailto:isaxvillain@gmail.com">
+              <span class="ci-dot">✉</span>
+              <span class="ci-text">isaxvillain@gmail.com</span>
+            </a>
+            <a class="contact-item" href="tel:+923149437063">
+              <span class="ci-dot">📞</span>
+              <span class="ci-text">+92 314 9437063</span>
+            </a>
+            <a class="contact-item" href="https://wa.me/923149437063" target="_blank" rel="noopener">
+              <span class="ci-dot">🟢</span>
+              <span class="ci-text">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- right portrait capsule -->
+        <div class="hero-right">
+          <div class="capsule-wrap">
+            <!-- neon outline & inner capsule background -->
+            <div class="capsule-bg"></div>
+
+            <!-- glowing outline (SVG) -->
+            <svg class="capsule-outline" viewBox="0 0 360 480" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <defs>
+                <linearGradient id="outlineGrad" x1="0" x2="1">
+                  <stop offset="0" stop-color="#7b45ff" />
+                  <stop offset="1" stop-color="#3ab0ff" />
+                </linearGradient>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
+                  <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+
+              <rect x="6" y="6" rx="64" ry="64" width="348" height="468" fill="none" stroke="url(#outlineGrad)" stroke-width="8" filter="url(#glow)"/>
+            </svg>
+
+            <!-- masked portrait inside rounded capsule -->
+            <div class="portrait-mask">
+              <img src="images/profile.jpg" alt="Isa portrait" class="portrait" />
+            </div>
+
+            <!-- small decorative svg loop -->
+            <svg class="loop" viewBox="0 0 200 200" aria-hidden="true">
+              <path d="M10 100 C 40 40, 160 40, 190 100" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- lower rounded cards section -->
+    <section class="lower container">
+      <div class="lower-inner">
+        <div class="rounded-panel panel-left">
+          <h3>Education</h3>
+          <p class="muted">SLPS — IT / Pentesting / Web Development</p>
+          <p class="years">2020 — 2025</p>
+
+          <h4 class="mt">Technical skill</h4>
+          <div class="icons">
+            <div class="icon-b">HTML</div>
+            <div class="icon-b">CSS</div>
+            <div class="icon-b">JS</div>
+            <div class="icon-b">Pentest</div>
+          </div>
+
+          <h4 class="mt">Interest</h4>
+          <div class="chips">
+            <span>Ethical Hacking</span>
+            <span>Philosophy</span>
+            <span>Gaming</span>
+          </div>
+        </div>
+
+        <div class="rounded-panel panel-right">
+          <h3>Soft skill</h3>
+          <div class="two-cols">
+            <ul>
+              <li>Problem solving</li>
+              <li>Critical thinking</li>
+              <li>Communication</li>
+            </ul>
+            <ul>
+              <li>Attention to detail</li>
+              <li>Teamwork</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+
+          <h4 class="mt">Skill set</h4>
+          <ul class="skill-list">
+            <li>Web design & development</li>
+            <li>Vulnerability assessment & pentesting</li>
+            <li>Wireframing & prototyping</li>
+            <li>Debugging & optimization</li>
+            <li>User research (basic)</li>
+          </ul>
+
+          <h4 class="mt">Language</h4>
+          <div class="chips">
+            <span>English</span>
+            <span>Urdu</span>
+            <span>Pashto</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <div>© <span id="year"></span> Isa Khan</div>
+      <div class="foot-links">
+        <a href="mailto:isaxvillain@gmail.com">Email</a>
+        <a href="https://wa.me/923149437063" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
